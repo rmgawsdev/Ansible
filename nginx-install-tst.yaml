@@ -2,7 +2,7 @@
   hosts: web
   become: yes # sudo access
   tasks: 
-  - name: install nginx
+  - name: instl nginx server
     ansible.builtin.package: #hetrogenius module that can work for all distributions
       name: nginx
       state: present
