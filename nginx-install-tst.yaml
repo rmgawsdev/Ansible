@@ -1,0 +1,8 @@
+- name: nginx server install and run
+  hosts: web
+  become: yes # sudo access
+  tasks: 
+  - name: nginx server install and run
+    ansible.builtin.package:
+    name: nginx
+    state: present
