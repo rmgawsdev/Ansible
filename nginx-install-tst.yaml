@@ -4,5 +4,5 @@
   tasks: 
   - name: install nginx
     ansible.builtin.package: #hetrogenius module that can work for all distributions
-    name: nginx
-    state: present
+      name: nginx
+      state: present
